@@ -9,7 +9,9 @@ export default function Footer() {
           <nav className="flex flex-wrap justify-center gap-6 text-sm">
             <Link href="/" className="hover:text-accent transition-colors">Home</Link>
             <Link href="/services" className="hover:text-accent transition-colors">Services</Link>
+            <Link href="/areas/newcastle" className="hover:text-accent transition-colors">Areas</Link>
             <Link href="/about-us" className="hover:text-accent transition-colors">About Us</Link>
+            <Link href="/faq" className="hover:text-accent transition-colors">FAQ</Link>
             <Link href="/contact-us" className="hover:text-accent transition-colors">Contact Us</Link>
           </nav>
 

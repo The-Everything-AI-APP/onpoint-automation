@@ -74,10 +74,22 @@ export default function Header() {
           </div>
 
           <Link
+            href="/areas/newcastle"
+            className={`text-sm font-semibold uppercase tracking-wide transition-colors hover:text-accent ${pathname.startsWith("/areas") ? "text-accent" : "text-dark"}`}
+          >
+            Areas
+          </Link>
+          <Link
             href="/about-us"
             className={`text-sm font-semibold uppercase tracking-wide transition-colors hover:text-accent ${pathname === "/about-us" ? "text-accent" : "text-dark"}`}
           >
             About Us
+          </Link>
+          <Link
+            href="/faq"
+            className={`text-sm font-semibold uppercase tracking-wide transition-colors hover:text-accent ${pathname === "/faq" ? "text-accent" : "text-dark"}`}
+          >
+            FAQ
           </Link>
           <Link
             href="/contact-us"
@@ -138,8 +150,14 @@ export default function Header() {
                 ))}
               </div>
             )}
+            <Link href="/areas/newcastle" className="px-6 py-4 border-b border-white/10 hover:bg-white/5" onClick={() => setMobileOpen(false)}>
+              Areas We Service
+            </Link>
             <Link href="/about-us" className="px-6 py-4 border-b border-white/10 hover:bg-white/5" onClick={() => setMobileOpen(false)}>
               About Us
+            </Link>
+            <Link href="/faq" className="px-6 py-4 border-b border-white/10 hover:bg-white/5" onClick={() => setMobileOpen(false)}>
+              FAQ
             </Link>
             <Link href="/contact-us" className="px-6 py-4 border-b border-white/10 hover:bg-white/5" onClick={() => setMobileOpen(false)}>
               Contact Us
