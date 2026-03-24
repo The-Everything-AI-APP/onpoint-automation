@@ -1,0 +1,44 @@
+# Onpoint Automation
+
+## About
+Onpoint Automation is a Control4 Platinum dealer specialising in smart home automation. Based in Raymond Terrace, NSW, Australia, we service the Newcastle, Hunter Valley, Lake Macquarie, Port Stephens, Maitland, and Cessnock regions.
+
+## Services
+- Home Automation (Control4 smart home systems)
+- Smart Lighting (automated indoor and outdoor lighting)
+- Multi-Room Audio/Video (whole-home entertainment)
+- Security & Access Control (cameras, smart locks, intercoms)
+- IT Networking (enterprise-grade home networks)
+- Home Theatre Design & Installation
+- Motorised TV Lifters
+- Hi-Fi Systems
+
+## Service Area
+- Newcastle, NSW
+- Lake Macquarie, NSW
+- Maitland, NSW
+- Port Stephens, NSW
+- Hunter Valley, NSW
+- Cessnock, NSW
+- Merewether, NSW
+- Nelson Bay, NSW
+- Charlestown, NSW
+- Pokolbin, NSW
+
+## Contact
+- Phone: 0402 856 783
+- Email: admin@onpointautomation.com.au
+- Website: https://onpointautomation.vercel.app
+
+## Key Pages
+- Home: https://onpointautomation.vercel.app/
+- About Us: https://onpointautomation.vercel.app/about-us
+- Services: https://onpointautomation.vercel.app/services
+- Contact Us: https://onpointautomation.vercel.app/contact-us
+- FAQ: https://onpointautomation.vercel.app/faq
+- Newcastle: https://onpointautomation.vercel.app/areas/newcastle
+- Lake Macquarie: https://onpointautomation.vercel.app/areas/lake-macquarie
+- Maitland: https://onpointautomation.vercel.app/areas/maitland
+- Port Stephens: https://onpointautomation.vercel.app/areas/port-stephens
+- Hunter Valley: https://onpointautomation.vercel.app/areas/hunter-valley
+- Cessnock: https://onpointautomation.vercel.app/areas/cessnock

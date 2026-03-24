@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import ContactSection from "@/components/ContactSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { ServiceSchema, BreadcrumbSchema } from "@/components/SchemaMarkup";
 import { services, getServiceBySlug } from "@/data/services";
 import type { Metadata } from "next";
@@ -50,6 +51,14 @@ export default async function ServicePage({
         image={service.image}
       />
       <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: service.shortTitle, url: `/services/${slug}` },
+        ]}
+      />
+
+      <Breadcrumbs
         items={[
           { name: "Home", url: "/" },
           { name: "Services", url: "/services" },

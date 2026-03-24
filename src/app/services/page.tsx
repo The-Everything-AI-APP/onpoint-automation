@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import ContactSection from "@/components/ContactSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { services } from "@/data/services";
 import type { Metadata } from "next";
 
@@ -42,6 +43,13 @@ const packages = [
 export default function Services() {
   return (
     <>
+      <Breadcrumbs
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+        ]}
+      />
+
       {/* Hero */}
       <section className="bg-dark py-20">
         <div className="max-w-4xl mx-auto px-4 text-center">
@@ -64,8 +72,9 @@ export default function Services() {
                   <div className="relative aspect-[3/2] rounded-lg overflow-hidden mb-4">
                     <Image
                       src={service.image}
-                      alt={service.shortTitle}
+                      alt={`Control4 ${service.shortTitle} installation and setup by Onpoint Automation`}
                       fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>

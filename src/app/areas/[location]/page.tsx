@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import ContactSection from "@/components/ContactSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { BreadcrumbSchema } from "@/components/SchemaMarkup";
 import { locations, getLocationBySlug } from "@/data/locations";
 import { services } from "@/data/services";
@@ -69,6 +70,14 @@ export default async function LocationPage({
         items={[
           { name: "Home", url: "/" },
           { name: "Areas We Service", url: "/areas/newcastle" },
+          { name: location.name, url: `/areas/${slug}` },
+        ]}
+      />
+
+      <Breadcrumbs
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Areas", url: "/areas/newcastle" },
           { name: location.name, url: `/areas/${slug}` },
         ]}
       />
@@ -197,6 +206,28 @@ export default async function LocationPage({
           >
             Get A Free Quote
           </Link>
+        </div>
+      </section>
+
+      {/* Cross-links to other locations */}
+      <section className="py-16">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="font-heading text-2xl font-bold text-dark mb-6 text-center">
+            We Also Service
+          </h2>
+          <div className="flex flex-wrap justify-center gap-3">
+            {locations
+              .filter((l) => l.slug !== slug)
+              .map((l) => (
+                <Link
+                  key={l.slug}
+                  href={`/areas/${l.slug}`}
+                  className="bg-grey-bg hover:bg-accent hover:text-white text-gray-700 px-5 py-2.5 rounded-full text-sm font-semibold transition-colors"
+                >
+                  {l.name}
+                </Link>
+              ))}
+          </div>
         </div>
       </section>
 

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import HeroSlider from "@/components/HeroSlider";
 import CallbackBar from "@/components/CallbackBar";
-import ContactSection from "@/components/ContactSection";
+import LazyContactSection from "@/components/LazyContactSection";
 import { services } from "@/data/services";
 
 export default function Home() {
@@ -35,8 +35,9 @@ export default function Home() {
           <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
             <Image
               src="/images/welcome-section.jpg"
-              alt="Smart home control"
+              alt="Control4 smart home touchscreen controlling lighting and entertainment in a modern living room"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
             />
           </div>
@@ -67,8 +68,9 @@ export default function Home() {
                 <div className="relative aspect-[3/2] overflow-hidden">
                   <Image
                     src={service.image}
-                    alt={service.shortTitle}
+                    alt={`Control4 ${service.shortTitle} installation by Onpoint Automation in Newcastle and Hunter Valley`}
                     fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
@@ -137,7 +139,7 @@ export default function Home() {
         </div>
       </section>
 
-      <ContactSection />
+      <LazyContactSection />
     </>
   );
 }

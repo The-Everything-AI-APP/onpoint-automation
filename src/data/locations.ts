@@ -94,6 +94,54 @@ export const locations: Location[] = [
     ],
     mapQuery: "Cessnock+NSW+Australia",
   },
+  {
+    slug: "merewether",
+    name: "Merewether",
+    region: "Newcastle",
+    description: "Smart home automation for Merewether homes. Control4 installation, smart lighting, home theatre, and security systems for Merewether, Merewether Heights, The Junction, and surrounding Newcastle coastal suburbs.",
+    content: "Merewether is one of Newcastle's most sought-after coastal suburbs, known for its beautiful heritage homes, stunning ocean views, and thriving cafe culture. The mix of lovingly restored heritage properties and sleek modern builds makes Merewether an ideal suburb for smart home retrofits and new installations alike. Onpoint Automation specialises in integrating Control4 smart home systems into Merewether's character homes — adding modern convenience without compromising period charm. Whether it's concealed multi-room audio for seamless entertaining, automated lighting that highlights your home's architectural features, or smart security for peace of mind when you're at the beach, we tailor every system to suit the Merewether lifestyle.",
+    suburbs: [
+      "Bar Beach", "Cooks Hill", "Hamilton South", "Merewether",
+      "Merewether Heights", "The Hill", "The Junction",
+    ],
+    mapQuery: "Merewether+NSW+Australia",
+  },
+  {
+    slug: "nelson-bay",
+    name: "Nelson Bay",
+    region: "Port Stephens",
+    description: "Control4 smart home automation for Nelson Bay and Port Stephens. Smart security, remote monitoring, home theatre, and lighting systems for holiday homes and permanent residences in Nelson Bay, Shoal Bay, and Fingal Bay.",
+    content: "Nelson Bay is the jewel of Port Stephens — a coastal holiday destination famous for its dolphin-filled harbour, pristine beaches, and relaxed lifestyle. With a high proportion of holiday homes and short-term rental properties, Nelson Bay homeowners benefit enormously from smart home technology. Remote monitoring lets you check security cameras, lock doors, and control climate from anywhere in the world — perfect when your property is unoccupied between visits. Onpoint Automation installs Control4 systems throughout Nelson Bay and surrounds, from waterfront apartments in Shoal Bay to family homes in Fingal Bay. Smart security, automated lighting, and whole-home entertainment systems are our most popular solutions for Nelson Bay clients.",
+    suburbs: [
+      "Anna Bay", "Boat Harbour", "Corlette", "Fingal Bay", "Nelson Bay",
+      "One Mile", "Salamander Bay", "Shoal Bay", "Soldiers Point",
+    ],
+    mapQuery: "Nelson+Bay+NSW+Australia",
+  },
+  {
+    slug: "charlestown",
+    name: "Charlestown",
+    region: "Lake Macquarie",
+    description: "Smart home installation in Charlestown and Lake Macquarie. Control4 home automation, smart lighting, home theatre, and security for Charlestown, Dudley, Whitebridge, Kahibah, and surrounding suburbs.",
+    content: "Charlestown is the commercial hub of the Lake Macquarie region, surrounded by a mix of well-established family homes and exciting new developments. As the area continues to grow, homeowners are increasingly turning to smart home technology to add value, convenience, and security to their properties. Onpoint Automation brings Control4 smart home systems to Charlestown and surrounding suburbs like Dudley, Whitebridge, and Kahibah. Whether you're renovating an established home or fitting out a new build, we design systems that integrate smart lighting, multi-room audio, security cameras, and home automation into one seamless Control4 platform. Energy-efficient smart lighting and automated security are especially popular with Charlestown families.",
+    suburbs: [
+      "Charlestown", "Dudley", "Gateshead", "Jewells", "Kahibah",
+      "Kotara", "Mount Hutton", "Redhead", "Whitebridge",
+    ],
+    mapQuery: "Charlestown+NSW+Australia",
+  },
+  {
+    slug: "pokolbin",
+    name: "Pokolbin",
+    region: "Hunter Valley",
+    description: "Control4 smart home automation for Pokolbin and Hunter Valley wine country. Luxury home automation, entertainment systems, smart lighting, and security for wineries, boutique accommodation, and prestige properties in Pokolbin and Lovedale.",
+    content: "Pokolbin sits at the heart of the Hunter Valley wine country, home to world-class wineries, luxury accommodation, and some of the most prestigious properties in the region. Smart home technology is a natural fit for Pokolbin — where entertaining guests, creating memorable experiences, and protecting valuable investments are all part of daily life. Onpoint Automation delivers bespoke Control4 smart home systems for Pokolbin properties, from boutique cellar doors and guest houses to private rural estates. Whole-home entertainment systems set the scene for wine tastings and dinner parties, automated lighting creates ambiance from sunset through to the evening, and comprehensive security systems safeguard your property around the clock. We understand the unique needs of luxury properties in wine country.",
+    suburbs: [
+      "Broke", "Cessnock", "Lovedale", "North Rothbury", "Nulkaba",
+      "Pokolbin", "Rothbury",
+    ],
+    mapQuery: "Pokolbin+NSW+Australia",
+  },
 ];
 
 export function getLocationBySlug(slug: string): Location | undefined {

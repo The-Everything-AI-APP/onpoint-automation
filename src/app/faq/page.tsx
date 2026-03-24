@@ -1,4 +1,5 @@
 import { FAQSchema, BreadcrumbSchema } from "@/components/SchemaMarkup";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { faqs } from "@/data/faqs";
 import Link from "next/link";
 import type { Metadata } from "next";
@@ -15,6 +16,13 @@ export default function FAQPage() {
     <>
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "/" },
+          { name: "FAQ", url: "/faq" },
+        ]}
+      />
+
+      <Breadcrumbs
         items={[
           { name: "Home", url: "/" },
           { name: "FAQ", url: "/faq" },

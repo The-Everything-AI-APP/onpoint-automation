@@ -1,4 +1,5 @@
 import ContactSection from "@/components/ContactSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -8,6 +9,13 @@ export const metadata: Metadata = {
 export default function ContactUs() {
   return (
     <>
+      <Breadcrumbs
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Contact Us", url: "/contact-us" },
+        ]}
+      />
+
       {/* Hero */}
       <section className="bg-dark py-20">
         <div className="max-w-4xl mx-auto px-4 text-center">

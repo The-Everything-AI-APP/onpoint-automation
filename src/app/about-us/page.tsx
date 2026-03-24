@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import ContactSection from "@/components/ContactSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { services } from "@/data/services";
 import type { Metadata } from "next";
 
@@ -11,12 +12,20 @@ export const metadata: Metadata = {
 export default function AboutUs() {
   return (
     <>
+      <Breadcrumbs
+        items={[
+          { name: "Home", url: "/" },
+          { name: "About Us", url: "/about-us" },
+        ]}
+      />
+
       {/* Hero Banner */}
       <section className="relative h-[40vh] min-h-[300px]">
         <Image
           src="/images/about-hero.jpg"
-          alt="About Onpoint Automation"
+          alt="Onpoint Automation team delivering professional Control4 smart home installation services"
           fill
+          sizes="100vw"
           className="object-cover"
           priority
         />
@@ -59,8 +68,9 @@ export default function AboutUs() {
           <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
             <Image
               src="/images/about-security.jpg"
-              alt="Control4 Platinum Status"
+              alt="Control4 Platinum dealer certification showcasing smart home security and automation expertise"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
             />
           </div>
@@ -99,8 +109,9 @@ export default function AboutUs() {
               >
                 <Image
                   src={service.image}
-                  alt={service.shortTitle}
+                  alt={`Control4 ${service.shortTitle} service by Onpoint Automation`}
                   fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
