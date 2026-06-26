@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { OrganizationSchema } from "@/components/SchemaMarkup";
 import "./globals.css";
+import Script from "next/script";
 
 const frankRuhl = Frank_Ruhl_Libre({
   variable: "--font-frank-ruhl",
@@ -101,6 +102,20 @@ export default function RootLayout({
         <Header />
         <main className="flex-1 pt-20">{children}</main>
         <Footer />
+        {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga-init" strategy="afterInteractive">
+              {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');`}
+            </Script>
+          </>
+        )}
       </body>
     </html>
   );
