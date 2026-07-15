@@ -48,6 +48,17 @@ export default function Footer() {
         <div className="mt-8 pt-6 border-t border-white/10 text-center text-sm text-gray-400">
           Onpoint Automation 2026. All rights reserved.
         </div>
+        <div className="mt-3 text-center text-xs text-gray-500">
+          Designed and built using{' '}
+          <a
+            href="https://the-everything-app.com"
+            target="_blank"
+            rel="noopener"
+            className="text-gray-400 hover:text-accent transition-colors"
+          >
+            The Everything AI
+          </a>
+        </div>
       </div>
     </footer>
   );
