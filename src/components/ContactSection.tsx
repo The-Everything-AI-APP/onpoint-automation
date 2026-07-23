@@ -56,6 +56,10 @@ export default function ContactSection() {
               0402 856 783
             </a>
           </div>
+          <div className="space-y-1">
+            <p className="text-lg">NSW Electrical Contractors Licence 493553C</p>
+            <p className="text-lg">NSW Master Security Licence 000110885</p>
+          </div>
         </div>
       </div>
 
